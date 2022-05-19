@@ -34,7 +34,7 @@ public class StatisticsServiceTest {
     void findMax3() {
         StatisticsService service = new StatisticsService();
 
-        long[] incomesInBillions = {0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0};
+        long[] incomesInBillions = {0, 0, 0, -1, 0, 6, 0, 0, 0, 0, 0, 0};
         long expected = 6;
 
         long actual = service.findMax(incomesInBillions);
